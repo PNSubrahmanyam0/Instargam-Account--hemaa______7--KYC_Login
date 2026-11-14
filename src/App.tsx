@@ -5,6 +5,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { Instagram, ExternalLink, Loader2 } from 'lucide-react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { AccountCard } from './components/AccountCard';
 import { GoogleSignInPage } from './components/GoogleSignInPage';
 import { GmailRedirectView } from './components/GmailRedirectView';
@@ -225,6 +226,7 @@ export default function App() {
         </div>
       </footer>
 
+      <SpeedInsights />
     </div>
   );
 }
